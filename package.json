@@ -1,0 +1,40 @@
+{
+  "name": "openmct-orbital-tracker",
+  "version": "0.0.1",
+  "description": "Orbital Tracker for Open MCT",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test",
+    "prepare": "webpack",
+    "postinstall": "cd node_modules/openmct && npm install && cd ../../"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altoeducation/openmct-orbital-tracker.git"
+  },
+  "keywords": [
+    "openmct"
+  ],
+  "files": [
+    "dist/**/*"
+  ],
+  "author": "Alto Education",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/altoeducation/openmct-orbital-tracker/issues"
+  },
+  "homepage": "https://github.com/altoeducation/openmct-orbital-tracker#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "html-loader": "^0.5.1",
+    "mocha": "^6.1.4",
+    "node-sass": "^4.7.2",
+    "openmct": "git+https://github.com/nasa/openmct.git",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "uglifyjs-webpack-plugin": "^1.1.2",
+    "vue": "^2.5.2",
+    "webpack": "^3.10.0"
+  }
+}
